@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <table border="1" >
+    <tr>
+      <td colspan ="4">
+        <input type="text" id="displayScreen" value="0">
+      </td>
+    </tr>
+    <tr>
+      <td onclick="digitBtnPressed(7)" class="digits">7</td>
+      <td onclick="digitBtnPressed(8)" class="digits">8</td>
+      <td onclick="digitBtnPressed(9)" class="digits">9</td>
+      <td onclick="operatorBtnPressed('X')" class="rators">X</td>
+    </tr>
+    <tr>
+      <td onclick="digitBtnPressed(4)" class="digits">4</td>
+      <td onclick="digitBtnPressed(5)" class="digits">5</td>
+      <td onclick="digitBtnPressed(6)" class="digits">6</td>
+      <td onclick="operatorBtnPressed('-')" class="rators">-</td>
+      
+    </tr>
+    <tr>
+      <td onclick="digitBtnPressed(1)" class="digits">1</td>
+      <td onclick="digitBtnPressed(2)" class="digits">2</td>
+      <td onclick="digitBtnPressed (3)" class="digits">3</td>
+      <td onclick="operatorBtnPressed('+')" class="rators">+</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="digits">0</td>
+      <td onclick="btnACPressed()" class="AC">AC</td>
+      <td onclick="operatorBtnPressed('/')" class="rators">/</td>
+    </tr>
+    <tr>
+      <td colspan="4" onclick="equalsBtnPressed()"class="rators">=</td>
+    </tr>
+  </table>
+  <script src="main.js"></script>
+</body>
+</html>
